@@ -1,0 +1,132 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --Green5: hsl(158, 36%, 37%);
+    --Green7: hsl(158, 42%, 18%);
+
+    --Black: hsl(212, 21%, 14%);
+    --Grey: hsl(228, 12%, 48%);
+    --Cream: hsl(30, 38%, 92%);
+    --White: hsl(0, 0%, 100%);
+}
+body{
+    background-color: var(--Cream) ;
+    font-family: "Montserrat", sans-serif;
+}
+.section{
+    background-color: var(--White);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin: 90px auto;
+    border-radius: 15px;
+    width: 600px;
+    overflow: hidden;
+    margin-bottom: 50px;
+}
+.img-sec{
+    width: 290px;
+    height: 100%;
+}
+.perfume-sec{
+    background-color: var(--White);
+    width: 300px;
+    padding: 23px;
+}
+.perfume-par{
+    letter-spacing: 4px;
+    padding: 10px;
+    color: var(--Grey);
+    padding-left: 2px;
+
+}
+.perfume-sec h1{
+    width: 90%;
+    font-family: "Fraunces", serif;
+    font-weight: 700px;
+    padding-top : 10px
+}
+.perfume-sec .floral{
+    color: var(--Grey);
+    font-size: 13px;
+    width: 217px;
+    line-height: 1.4;
+    padding-top: 4px;
+}
+
+.prices{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 39px;
+    margin-top: 52px;
+    margin-bottom: 15px;
+}
+.sale-price{
+    font-size: 30px;
+    color: var(--Green5);
+    font-family: "Fraunces", serif;
+}
+.list-price{
+    color: var(--Grey);
+    text-decoration: line-through;
+}
+
+button{
+    background-color: var(--Green5);
+    color: var(--White);
+    border: none;
+    width: 95%;
+    height: 50px;
+    display: block; 
+    margin: 0 auto;
+    border-radius: 10px;
+    font-weight: 700;
+}
+.img-button{
+    padding-right: 10px;
+}
+button:hover{
+    background-color: var(--Green7);
+    color: var(--White);
+    cursor: pointer;
+}
+.img-sec-mob{
+    display: none;
+}
+footer{
+    margin-top: 10px;
+}
+@media only screen and (max-width:600px){
+    .section{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 360px;
+        
+    }
+    .img-sec-mob{
+        width: 100%;
+        display: block;
+    }
+    .img-sec{
+        display: none;
+    }
+    .perfume-sec h1{
+        width: 100%;
+        font-size: 24px;
+    }
+    .perfume-sec .floral{
+        
+        font-size: 13px;
+        width: 100%;
+    }
+    .prices{
+        margin-top: 18px;
+    }
+}
